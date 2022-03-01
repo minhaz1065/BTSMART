@@ -1,0 +1,149 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Maven Pro', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+span {
+    color: white;
+}
+
+span:hover {
+    color: black;
+}
+
+.container {
+    width: 100%;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    background-color: rgb(243, 193, 128);
+}
+
+.logo-holder {
+    float: left;
+    display: block;
+    padding: 5px;
+}
+
+.menu-holder a {
+    float: right;
+    display: block;
+    padding: 15px;
+    color: black;
+}
+
+.menu-holder a:hover {
+    background-color: rgb(71, 69, 69);
+    color: white;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: bolder;
+    color: black;
+}
+
+.logo:hover {
+    color: white;
+}
+
+.main {
+    margin-top: 100px;
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#box {
+    padding: 20px;
+    margin: 20px;
+    height: 200px;
+    width: 400px;
+    border-radius: 10px;
+    color: black;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bolder;
+    box-shadow: 5px 10px 8px #888888;
+    background-color: rgb(243, 193, 128);
+}
+
+#box:hover {
+    color: white;
+    background-color: rgb(71, 69, 69);
+}
+
+.products-column {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+}
+
+.products-row {
+    margin: 0 -5px;
+}
+
+.products-row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width: 600px) {
+    .products-column {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+    }
+    .main {
+        margin-top: 250px;
+        flex-direction: column;
+    }
+    .menu-holder a {
+        width: 100%;
+        display: block;
+    }
+}
+
+.card {
+    box-shadow: 5px 10px 8px #888888;
+    max-width: 400px;
+    margin: auto;
+    text-align: center;
+}
+
+.price {
+    color: grey;
+    font-size: 22px;
+}
+
+.card button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: black;
+    background-color: rgb(243, 193, 128);
+    text-align: center;
+    font-weight: bolder;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+
+.card button:hover {
+    color: white;
+    background-color: rgb(71, 69, 69);
+}
